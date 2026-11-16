@@ -1,0 +1,462 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>VAM Privacy Policy</title>
+<meta name="description" content="How VAM handles your data.">
+<link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+<header class="site"><a class="brand" href="/">VAM</a><nav><a href="/privacy/">Privacy</a><a href="/terms/">Terms</a><a href="/eula/">EULA</a><a href="/support/">Support</a></nav></header>
+<main>
+<h1>VAM Privacy Policy</h1>
+<p><em>Last updated: September 12, 2026</em></p>
+<p>VAM is made by <strong>CrackedPackz</strong>, a sole proprietorship in the State of
+Florida, United States. This policy covers the VAM iPhone app and the
+servers behind it.</p>
+<p><strong>Questions, requests, or complaints:</strong> support@vamcards.app
+<strong>Abuse and safety reports:</strong> abuse@vamcards.app</p>
+<p>The short version, because most of this policy is detail:</p>
+<ul>
+<li>We collect what is needed to run a shared ledger and an event floor, and
+  nothing else. <strong>No advertising, no ad SDKs, no data brokers, no tracking
+  across apps or websites, ever.</strong></li>
+<li><strong>We do not know where you are.</strong> VAM requests no location permission
+  and contains no location API.</li>
+<li><strong>Your cost basis never leaves your device&rsquo;s owner.</strong> What you paid for a
+  card is visible to you and never to another vendor, on the floor or anywhere
+  else.</li>
+<li>The price statistics other vendors see are <strong>anonymous and aggregated</strong>, and
+  nothing is shown at all until at least three separate sales exist.</li>
+<li><strong>You can delete your account, and everything attached to it, from inside the
+  app, in three taps.</strong> It happens immediately.</li>
+</ul>
+<hr>
+<h2>1. What we collect, and why</h2>
+<h3>1.1 Things you give us</h3>
+<table>
+<thead>
+<tr>
+<th>What</th>
+<th>Why</th>
+<th>Linked to you?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Email address</strong> (or the Apple relay address Sign in with Apple gives us)</td>
+<td>To create and sign you into your account, send the 6-digit sign-in code, and confirm an account deletion</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td><strong>Business name, handle, display name, avatar, bio</strong></td>
+<td>Shown to the other vendors at events you join — this is how they know whose table B-14 is</td>
+<td>Yes, and public to your event roster</td>
+</tr>
+<tr>
+<td><strong>Your ledger</strong> — sales, buys, trades, prices, quantities, payment method, notes, the event and county each was logged at</td>
+<td>This is the product. It is yours</td>
+<td>Yes, and private to you</td>
+</tr>
+<tr>
+<td><strong>Your inventory</strong> — cards, condition, quantity, cost basis, ask price, your own photos</td>
+<td>Your stock list</td>
+<td>Yes. <strong>Private by default.</strong> Only what you deliberately publish is visible, and <strong>cost basis is never published, to anyone, at any tier</strong></td>
+</tr>
+<tr>
+<td><strong>Chat messages, direct messages, image attachments, announcements</strong></td>
+<td>To deliver them to the people you sent them to</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td><strong>Event membership</strong> — which events you joined, your table number, check-in time</td>
+<td>To put you on the roster and scope who can see what</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td><strong>Reports you file and vendors you block</strong></td>
+<td>To act on abuse, and to keep a block enforced</td>
+<td>Yes</td>
+</tr>
+</tbody>
+</table>
+<h3>1.2 Things collected automatically</h3>
+<table>
+<thead>
+<tr>
+<th>What</th>
+<th>Why</th>
+<th>Linked to you?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Subscription state</strong> — which plan you have and whether it is active</td>
+<td>To unlock what you paid for. Handled by RevenueCat; <strong>we never see your card number, and no payment details ever touch our servers</strong></td>
+<td>Yes</td>
+</tr>
+<tr>
+<td><strong>Push notification token</strong></td>
+<td>To deliver a DM, an @mention, or an organizer&rsquo;s announcement. Deleted when it stops working</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td><strong>Product analytics</strong> — a fixed list of event names like <code>quick_log_opened</code>, <code>event_joined</code>, <code>purchase_completed</code></td>
+<td>To know which features are used and which are dead weight. <strong>The list is closed and enforced by the type system: no message body, no price, no card name, and no free text you typed can ever enter an analytics payload</strong></td>
+<td>Yes</td>
+</tr>
+<tr>
+<td><strong>Crash reports</strong> — stack trace, device model, OS version, app version</td>
+<td>To fix the bug that just interrupted your Saturday. Sent to Sentry. Identified by your account&rsquo;s random ID and nothing else; anything resembling an email address or a dollar amount is scrubbed before it leaves your phone</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td><strong>Anonymous price observations</strong></td>
+<td>See §3</td>
+<td><strong>No</strong></td>
+</tr>
+</tbody>
+</table>
+<h3>1.3 What we deliberately do <strong>not</strong> collect</h3>
+<p>Precise or coarse <strong>location</strong> (there is no location permission in this app —
+an event&rsquo;s city is text its organizer typed). <strong>Contacts.</strong> <strong>Health or fitness
+data.</strong> <strong>Financial account or card details.</strong> <strong>Advertising identifiers
+(IDFA).</strong> <strong>Browsing history.</strong> <strong>Biometrics.</strong> <strong>Your real name</strong>, unless you
+type it in as your business name. <strong>Age or date of birth.</strong> We do not buy data
+about you from anyone.</p>
+<hr>
+<h2>2. Your content, and who can see it</h2>
+<p>VAM is a shared space, so it matters exactly who sees what.</p>
+<p><strong>Private to you, always:</strong> your ledger, your cost basis, your notes, your
+margins, your analytics, your transaction counterparties.</p>
+<p><strong>Visible to vendors at an event you joined:</strong> your business name, handle,
+avatar, table number and check-in status; any inventory item you set to
+&ldquo;Event only&rdquo; or &ldquo;Public&rdquo;, with its ask price and photo but <strong>never its cost
+basis</strong>; anything you post in that event&rsquo;s channel.</p>
+<p><strong>Visible to one person:</strong> direct messages.</p>
+<p><strong>Publishing is opt-in, per item, and defaults to private.</strong> Nothing in your
+binder appears on a floor because you forgot a setting. An item published to an
+event stops being visible to that roster when the event archives, when you set
+it back to private, or if your paid plan lapses — hidden, never deleted.</p>
+<p><strong>Event organizers</strong> can, within their own event only, delete a message in
+their channel and remove a vendor from their roster. They <strong>cannot</strong> see any
+vendor&rsquo;s ledger, cost basis, margins, or per-vendor sales. The organizer sales
+dashboard is hall-wide aggregate only and is suppressed entirely unless at
+least three vendors have opted in.</p>
+<hr>
+<h2>3. Realized prices, and how they are kept anonymous</h2>
+<p>This is the part of VAM that touches other people&rsquo;s data, so here is
+exactly how it works.</p>
+<p>If you are on a paid plan, price sharing is <strong>on by default and explained
+during the upgrade</strong>, with a one-tap switch in Account. On the free plan it is
+<strong>off by default</strong>. Either way it is <code>Account → Price sharing</code>, one tap, any
+time.</p>
+<p>When you log a sale and price sharing is on, we write a separate record
+containing only:</p>
+<ul>
+<li>which card it was,</li>
+<li>which event and which day,</li>
+<li>whether it was a sale or a buy,</li>
+<li>the unit price and quantity, and</li>
+<li>a one-way cryptographic hash, salted with a secret that lives only on our
+  server, that lets us count distinct sellers and withdraw the record if you
+  delete the transaction.</li>
+</ul>
+<p><strong>That record contains no vendor identifier of any kind.</strong> There is no column
+for it, no foreign key to it, and no way to add one without a schema change.
+The hash cannot be reversed into your account.</p>
+<p>What other vendors then see is an <strong>aggregate</strong>: a median, a low-to-high range,
+and a count. Never a list of individual sales, and never in an order that could
+be matched to the moment you were seen making one.</p>
+<p><strong>Nothing is shown below three independent observations.</strong> Under three, the app
+says &ldquo;Not enough sales yet today&rdquo; and returns no numbers at all. This exists
+for one specific reason: at a small show with two vendors, a single un-floored
+statistic would tell the other vendor precisely what you sold and for how much.</p>
+<p><strong>Deleting a transaction withdraws its observation.</strong> <strong>Deleting your account
+leaves observations in place</strong>, because by then they contain nothing that was
+ever connected to you.</p>
+<p><strong>These numbers are user-reported and unverified.</strong> They are not an appraisal
+and not a guarantee — see <code>docs/TERMS-EULA.md</code> §6.</p>
+<hr>
+<h2>4. Who we share data with</h2>
+<p>We do not sell your data. We do not share it for advertising. We do not share
+it with data brokers. We have never done any of those things and the business
+model does not require it.</p>
+<p>We use these service providers, and only for the job named:</p>
+<table>
+<thead>
+<tr>
+<th>Provider</th>
+<th>What it handles</th>
+<th>Where</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Google Cloud</strong> (Cloud Run, Cloud SQL, Cloud Storage — our servers, which we operate)</td>
+<td>Everything in §1.1: accounts, ledgers, inventory, photos, chat, events</td>
+<td>United States (South Carolina, us-east1)</td>
+</tr>
+<tr>
+<td><strong>Apple</strong> — Sign in with Apple, in-app purchase, push notification service</td>
+<td>Authentication if you choose it; all payments; notification delivery</td>
+<td>Apple&rsquo;s infrastructure</td>
+</tr>
+<tr>
+<td><strong>RevenueCat</strong></td>
+<td>Subscription state only — which plan, active or not. No card details, no ledger data</td>
+<td>United States</td>
+</tr>
+<tr>
+<td><strong>Sentry</strong></td>
+<td>Crash and error reports</td>
+<td>United States</td>
+</tr>
+<tr>
+<td><strong>Expo</strong> (push notification service)</td>
+<td>Relays a notification to Apple. Sees the token and the notification text</td>
+<td>United States</td>
+</tr>
+<tr>
+<td><strong>Public trading-card catalog services</strong></td>
+<td>When you search for a card by name, we ask a public card-identity service for its set, number and rarity. <strong>Only the search text is sent, never your identity, your inventory or your prices</strong>, and no prices or images come back</td>
+<td>Various</td>
+</tr>
+<tr>
+<td><strong>Our email provider</strong> (Resend)</td>
+<td>Sends your 6-digit sign-in code and your deletion confirmation</td>
+<td>United States</td>
+</tr>
+<tr>
+<td><strong>Ximilar</strong> (card recognition)</td>
+<td>When you scan a card, the photo of the card — and only the photo — is sent to Ximilar to be recognised. No account identifier, no price and none of your ledger goes with it, and the photo is not kept by us for this purpose. If our Ximilar key is not configured the scan is matched locally instead</td>
+<td>European Union (Czech Republic)</td>
+</tr>
+<tr>
+<td><strong>TypeSafe AI</strong> (report triage)</td>
+<td>When someone reports a message or a floor listing, the text of the report and of the reported item is sent to TypeSafe AI&rsquo;s Jev model, which returns only a category and a severity score so the report can be handled inside our 24-hour moderation window. No identifiers, no prices, no ledger. It is a classifier: it generates no text and its answer is always reviewable and reversible by us</td>
+<td>United States</td>
+</tr>
+</tbody>
+</table>
+<p>We will also disclose data if legally required to — a subpoena, a court order,
+a valid legal process — or where we believe in good faith it is necessary to
+prevent imminent harm, investigate fraud, or enforce our Terms. If the law lets
+us tell you first, we will.</p>
+<p>If VAM is ever sold or merged, your data may transfer to the buyer under
+this same policy, and you will be told before it happens.</p>
+<hr>
+<h2>5. How long we keep things</h2>
+<table>
+<thead>
+<tr>
+<th>Data</th>
+<th>Retention</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Your account, ledger and inventory</td>
+<td>Until you delete your account</td>
+</tr>
+<tr>
+<td>Chat messages</td>
+<td>Until you delete them, until you delete your account, or until a moderator removes them</td>
+</tr>
+<tr>
+<td>Chat and inventory images</td>
+<td>Same as the message or item they belong to. Stored in <strong>private</strong> buckets and served only through short-lived signed links (1 hour for chat images, 24 hours for inventory photos)</td>
+</tr>
+<tr>
+<td>Event channels</td>
+<td>Read-only 24 hours after an event ends, then archived; messages remain readable to that event&rsquo;s roster</td>
+</tr>
+<tr>
+<td>Push tokens</td>
+<td>Until they stop working, or you turn notifications off, or you delete your account</td>
+</tr>
+<tr>
+<td>Crash reports</td>
+<td>Sentry&rsquo;s default retention (about 90 days)</td>
+</tr>
+<tr>
+<td>Database backups</td>
+<td>Encrypted daily backups of the database roll off after 7 days, so data you delete is gone from backups within a week</td>
+</tr>
+<tr>
+<td>Analytics events</td>
+<td>Aggregated; individual rows are pruned on a rolling basis</td>
+</tr>
+<tr>
+<td>Anonymous price observations</td>
+<td>Indefinitely. They contain no identifier — see §3</td>
+</tr>
+<tr>
+<td>Moderation reports and the audit log of actions taken</td>
+<td>Kept as long as needed to enforce a ban and to show a pattern of abuse</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2>6. Deleting your account</h2>
+<p><strong>In the app: the account button → Account → Delete account.</strong> Three taps. You
+confirm by typing DELETE. It is not a request, not a deactivation, and not
+&ldquo;within 30 days&rdquo; — it runs immediately, and here is exactly what it does:</p>
+<ol>
+<li>Your profile is anonymized in place: handle replaced with a random string,
+   business name replaced with &ldquo;Deleted vendor&rdquo;, display name, avatar and bio
+   erased.</li>
+<li>Every message you wrote is marked deleted, its text and image links erased,
+   and the uploaded images themselves removed from storage.</li>
+<li>Your inventory, push tokens, chat memberships, blocks and staff seats are
+   <strong>deleted outright</strong>.</li>
+<li>Your transactions and their line items are <strong>kept, but stripped</strong>: reattached
+   to an anonymous tombstone that nobody can sign in as, with counterparty
+   names and notes erased. This is deliberate — a trade has a second vendor on
+   the other side of it, and their ledger has to stay consistent. Nothing left
+   in those rows identifies you.</li>
+<li>Your anonymous price observations are untouched, because they never held an
+   identifier (§3).</li>
+<li>Your Sign in with Apple token is revoked, and your authentication record is
+   deleted.</li>
+<li>The app&rsquo;s local database on your phone is erased and you are signed out.</li>
+<li>A confirmation email is sent.</li>
+</ol>
+<p><strong>Deleting your account does not cancel an App Store subscription.</strong> Only Apple
+can do that: <strong>Settings → [your name] → Subscriptions</strong>. The app says so on the
+confirmation screen and links you there.</p>
+<p>Want your data instead of deleting it? <strong>Account → Export</strong> produces a CSV of
+your ledger and inventory. Or email us and we will send you everything we hold.</p>
+<hr>
+<h2>7. Your rights</h2>
+<p>Whoever and wherever you are, you can ask us to show you what we hold about
+you, correct it, delete it, or send it to you in a portable format. Email
+support@vamcards.app. We answer within 30 days and we do not charge for
+it. Most of it you can do yourself, faster, in the app.</p>
+<p><strong>If you are in California (CCPA/CPRA):</strong> you have the right to know, delete,
+correct, and to opt out of sale or sharing — and we make that last one easy by
+never selling or sharing your personal information for cross-context behavioral
+advertising. We do not discriminate against anyone who exercises a right.</p>
+<p><strong>If you are in the EU or UK (GDPR):</strong> our lawful bases are <strong>contract</strong> (we
+cannot run your account, your floor or your chat without this data),
+<strong>legitimate interests</strong> (security, abuse prevention, fixing crashes,
+understanding which features are used), and <strong>consent</strong> where we ask for it
+(push notifications, price sharing on the free plan). You may object, restrict,
+or withdraw consent at any time, and you may complain to your supervisory
+authority. Our servers are in the United States; where we transfer personal
+data out of the EEA or UK we rely on the European Commission&rsquo;s <strong>Standard
+Contractual Clauses</strong>.</p>
+<p><strong>Do Not Track / Global Privacy Control:</strong> we do no tracking, so there is
+nothing for these signals to turn off.</p>
+<hr>
+<h2>8. Children</h2>
+<p>VAM is for people running a business at trading-card events. <strong>You must
+be at least 16 to create an account</strong>, and under 18 only with a parent or
+guardian&rsquo;s consent (see the Terms). We do not knowingly collect anything from a
+child under 13. If you believe a child has created an account, email
+support@vamcards.app and we will delete it.</p>
+<hr>
+<h2>9. Security</h2>
+<p>Every table in our database is protected by <strong>row-level security</strong>, enabled
+without exception: what you can read is decided by the database itself, not by
+the app, so a bug in the app cannot expose another vendor&rsquo;s ledger. Image
+storage buckets are private and served only through expiring signed links. Your
+sign-in token is held in the iPhone&rsquo;s secure keychain. Privileged operations
+run on the server; the app itself holds only a public key that can do nothing
+RLS does not allow. All traffic is over HTTPS.</p>
+<p>No system is perfect. If you find a hole, email support@vamcards.app — we
+would much rather hear it from you.</p>
+<hr>
+<h2>10. Where this policy is governed</h2>
+<p>This policy and the handling of your data are governed by the laws of the
+<strong>State of Florida, United States</strong>, and the applicable federal laws of the
+United States, without regard to conflict-of-laws rules. Our servers and
+providers are in the United States; using VAM means your data is
+processed there. Nothing in this section takes away a right you have under the
+mandatory law of the country you live in.</p>
+<hr>
+<h2>11. Trading-card names, publisher trademarks, and card art</h2>
+<p>VAM is a tool for tracking physical cards that you own. To do that it
+has to be able to say which card you mean.</p>
+<p><strong>Card names, set names, set codes, collector numbers and game names are used
+nominatively</strong> — purely to identify a physical object — and they are the
+trademarks of their respective owners. <strong>VAM is not affiliated with,
+endorsed by, sponsored by, or licensed by any game publisher or trading-card
+marketplace.</strong></p>
+<p><strong>We ship no publisher card art.</strong> None. Where another app would show a picture
+of the card, VAM draws a typographic plate instead. The only image ever
+attached to an inventory item is <strong>a photograph a vendor took of a card they
+physically have</strong>, and uploading publisher artwork is a breach of our Terms.</p>
+<p><strong>We display no third-party market price data.</strong> There is no price feed in this
+app. Every number shown is either a vendor&rsquo;s own ask price or an aggregate of
+what VAM&rsquo;s own users reported selling for (§3).</p>
+<h3>Riot Games — Riftbound</h3>
+<p>Where VAM supports <strong>Riftbound</strong>, Riot Games&rsquo; trading card game, the
+following notices apply and are displayed in the app under
+<strong>Account → Legal &amp; Safety</strong>.</p>
+<p>Riot&rsquo;s Riftbound developer policy requires that an app include the statement
+from Section 6 of Riot&rsquo;s &ldquo;Legal Jibber Jabber&rdquo; policy <em>&ldquo;in a place that&rsquo;s clear
+and easy to find&rdquo;</em>
+(<a href="https://developer.riotgames.com/policies/riftbound">https://developer.riotgames.com/policies/riftbound</a>). That statement, exactly
+as Riot specifies it:</p>
+<blockquote>
+<p>VAM was created under Riot Games&rsquo; &ldquo;Legal Jibber Jabber&rdquo; policy using
+assets owned by Riot Games.  Riot Games does not endorse or sponsor this
+project.</p>
+</blockquote>
+<p>Riot&rsquo;s General Developer Policies separately require the following boilerplate
+<em>&ldquo;in a location that is readily visible to players&rdquo;</em>
+(<a href="https://developer.riotgames.com/policies/general">https://developer.riotgames.com/policies/general</a>):</p>
+<blockquote>
+<p>VAM isn&rsquo;t endorsed by Riot Games and doesn&rsquo;t reflect the views or
+opinions of Riot Games or anyone officially involved in producing or managing
+Riot Games properties. Riot Games, and all associated properties are
+trademarks or registered trademarks of Riot Games, Inc.</p>
+</blockquote>
+<p>Both are displayed, because the Riftbound policy instructs developers to read
+and comply with the General policies as well.</p>
+<blockquote>
+<h3>⚠️ Engineering note — remove this box before publishing</h3>
+<p><strong>Do not ship any Riftbound surface until Riot developer registration is
+approved.</strong> Riot&rsquo;s Legal Jibber Jabber §3 is unambiguous
+(<a href="https://www.riotgames.com/en/legal">https://www.riotgames.com/en/legal</a>):</p>
+<blockquote>
+<p>&ldquo;we do not allow any Projects on the Apple Store or Google Play Store
+unless they have either a written license agreement from us or a valid Riot
+API key and comply with our API Terms and Policies&rdquo;</p>
+</blockquote>
+<p>Registration is mandatory <em>&ldquo;regardless of whether or not your product uses
+official documented APIs&rdquo;</em>, so sourcing Riftbound card names from Riftcodex
+instead of Riot&rsquo;s API does <strong>not</strong> exempt us — it makes it worse, because the
+Riftbound policy also says <em>&ldquo;Your App may only use Riftbound assets
+(including cards) provided by the Riot API. No external or unofficial
+materials.&rdquo;</em></p>
+<p>Until the registration in <code>docs/PLAN.md</code> § 4 is approved with a production
+API key, the correct v1 behaviour is <strong>no Riftbound game option at all</strong> —
+not &ldquo;catalog names only&rdquo;. Once approved: source Riftbound card data from
+Riot&rsquo;s API, display official English text, show both disclaimers above, and
+keep the app framed as a <strong>card library and inventory tool</strong> — &ldquo;card
+libraries&rdquo; is a listed approved use case and &ldquo;metagame-defining statistics&rdquo;
+is a listed rejection ground. Our realized-price pulse must never be extended
+to Riftbound win rates, play rates or matchup data.</p>
+<p>Also note: Guideline 5.2.2 says <em>&ldquo;Authorization must be provided upon
+request.&rdquo;</em> Have the Riot portal approval on hand at submission.</p>
+</blockquote>
+<hr>
+<h2>12. Changes to this policy</h2>
+<p>If we change anything that affects how your data is handled, we will update
+this page and the date at the top, and we will tell you in the app before the
+change takes effect. If the change is material, we will ask you to accept it.
+The App Store privacy labels are updated at the same time, never after.</p>
+<hr>
+<h2>13. Contact</h2>
+<p><strong>CrackedPackz</strong>
+State of Florida, United States
+General and privacy: <strong>support@vamcards.app</strong>
+Abuse and safety: <strong>abuse@vamcards.app</strong></p>
+<p>We are one person and a card table. Email actually reaches us.</p>
+</main>
+<footer><p>VAM — Vendor Application Management, by CrackedPackz. Support: support@vamcards.app · Abuse and safety: abuse@vamcards.app</p></footer>
+</body>
+</html>

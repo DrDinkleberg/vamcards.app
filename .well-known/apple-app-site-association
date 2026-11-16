@@ -1,0 +1,12 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": ["89P55UJK7V.com.mattmendes.vam"],
+        "components": [
+          { "/": "/join/*", "comment": "Event invite links: https://<domain>/join/<CODE> (src/lib/deep-links.ts)" }
+        ]
+      }
+    ]
+  }
+}
